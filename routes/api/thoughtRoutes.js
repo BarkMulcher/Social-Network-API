@@ -16,7 +16,6 @@ router
     .get(getAllThoughts)
     .post(createNewThought);
 
-    // get single thought, update & delete by ID
 router
     .route('/:thoughtId')
     .get(getSingleThought)

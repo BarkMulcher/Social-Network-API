@@ -57,7 +57,7 @@ module.exports = {
                         .json({ message: `No user found with that ID :()` })
                     : Thought.deleteMany({ _id: { $in: user.thoughts } })
             )
-            .then(() => res.json({ message: `User & their thoughts deleted :0` }))
+            .then(() => res.json({ message: `User & their thoughtcrimes deleted :0` }))
             .catch((err) => res.status(500).json(err));
     },
     // add friend to user

@@ -43,6 +43,7 @@ module.exports = {
     deleteThought(req, res) {
         Thought.findOneAndDelete(
             { _id: req.params.thoughtId }
+        )
                 .then((thought) =>
                     !thought
                         ? res
@@ -63,7 +64,6 @@ module.exports = {
                             message: `Thought deleted`
                         })
                 )
-        )
     },
     // create reaction
     createReaction(req, res) {

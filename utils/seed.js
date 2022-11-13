@@ -6,11 +6,11 @@ connection.on('error', (err) => err);
 connection.once('open', async () => {
   console.log('connected');
 
-  // Drop existing thoughts
-  await Thought.deleteMany({});
+  // // Drop existing thoughts
+  // await Thought.deleteMany({});
 
-  // Drop existing users
-  await User.deleteMany({});
+  // // Drop existing users
+  // await User.deleteMany({});
 
   // Create empty array to hold the users
   const users = [];

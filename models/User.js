@@ -15,9 +15,11 @@ const userSchema = new Schema(
             type: String,
             unique: true,
             required: true,
-            validate: [
-                isEmail, 'invalid email'
-            ]
+            validate(value){
+                if(!validator.isEmail(value)){
+                    throw new Error('invalid email')
+                }
+            }
         },
         thoughts: [
             {

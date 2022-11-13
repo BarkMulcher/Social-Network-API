@@ -14,8 +14,7 @@ const {
 router
     .route('/')
     .get(getAllUsers)
-    .post(createNewUser)
-    .delete(deleteUser);
+    .post(createNewUser);
 
 // /api/users/:userId
 router

@@ -1,5 +1,3 @@
-const { Schema, model } = require('mongoose');
-
 // schema for users:
 const { Schema, Types, model } = require('mongoose');
 const validator = require('validator');
